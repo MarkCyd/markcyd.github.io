@@ -308,6 +308,9 @@ section {
   width: 400px;
   margin: auto 0;
 }
+.text-container p{
+  text-indent: 30px;
+}
 
 /* EXPERIENCE SECTION */
 
@@ -351,14 +354,8 @@ article {
   width: 100%;
   justify-content:left;
   gap: 0.5rem;
- 
-  
 }
-
-/* article .icon {
-  cursor: default;
-}
- *//* inserted skill bar */
+/* inserted skill bar */
 .skill{
   flex-basis: 100%;
   
