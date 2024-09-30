@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    /*align-items: center; */
+    min-height: 100vh;
+    background-color: #000; /* Set background to black */
+    padding: 20px; /* Add some padding for smaller screens */
+  }
+  
+  .window {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #aeaeae;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  .window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d8dee9;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .window-buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .window-buttons span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f56; /* Close button color */
+  }
+  
+  .window-buttons span:nth-child(2) {
+    background-color: #ffbd2e; /* Minimize button color */
+  }
+  
+  .window-buttons span:nth-child(3) {
+    background-color: #27c93f; /* Maximize button color */
+  }
+  
+  .window-title {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .window-content {
+    padding: 20px;
+    color: #444;
+    text-align: center;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .window {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .window {
+      max-width: 95%;
+    }
+  
+    .window-header, .window-content {
+      padding: 15px;
+    }
+  }
+  
